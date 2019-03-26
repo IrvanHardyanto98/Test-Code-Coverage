@@ -1,9 +1,2 @@
 language: java
-jdk:
-  - oraclejdk8
-  
- script: "mvn corbertura:corbertura"
-
-
- after_success:
-  - bash <(curl -s https://codecov.io/bash)
+jdk: oraclejdk8
