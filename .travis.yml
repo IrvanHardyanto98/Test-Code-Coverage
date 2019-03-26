@@ -1,12 +1,5 @@
 language: java
 jdk: 
  - oraclejdk8
-before_script:
-  - pip install --user codecov
-
 after_success:
-  - codecov
-  
-env:
-  global:
-    - CODECOV_TOKEN="cc3f4261-feef-4e0a-850a-9a9c120baab7"
+  - bash <(curl -s https://codecov.io/bash)
